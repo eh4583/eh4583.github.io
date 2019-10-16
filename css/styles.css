@@ -2,7 +2,7 @@
 
 /* Style for body specifies a background color  */
 body {
-	background-color: #FFFF99; 
+	background-color: #1D1D1C; 
 }
 
 /* Style to create a fluid image */
@@ -21,10 +21,7 @@ img {
 	
 /* Style for header specifies top margin, background color, rounded corners, and center-aligns content */
 header {
-		margin-top: 0.2em;
-		background-color: #FFFFFF;
-		border-radius: 0.5em;
-				text-align: center;
+	text-align: center;
 }
 
 /* Style for nav specifies text properties */
@@ -33,6 +30,7 @@ nav {
 	font-size: 1.25em;
 	font-weight: bold;
 	text-align: center;	
+	margin-top: -1.5em;
 }
 
 /* Style specifies padding and margins for unsorted lists */
@@ -44,7 +42,7 @@ nav ul {
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
 nav li {
-	background-color: #009933;
+	background-color: #9D9D93;
 	border-radius: 2em;
 	list-style-type: none;
 	margin: 0.3em;
@@ -74,10 +72,18 @@ main {
 	font-size: 1em;
 	margin-top: 0.5em;
 	padding: 1em;
-	border-radius: 1em;
+	border-radius: 2em 0 2EM 0;
 	background-color: #FFFFFF;
-	border-top: solid 0.2em #009933;
-	border-bottom: solid 0.2em #009933;
+	opacity: .85;
+	}
+
+main a {
+	background-color: #9D9D93;
+	border-radius: 1em;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
 }
 
 /* Style for footer specifies font size, text alignment, and top margin*/
@@ -85,6 +91,12 @@ footer {
 	font-size: .70em;
 	text-align: center;
 	margin-top: 2em;
+	color: #FFFFFF;
+}
+
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 /* Style hides talet class */
@@ -95,6 +107,13 @@ footer {
 /* Style rule specifies to not to display the equip class */
 .equip {
 	display: none;
+}
+
+
+
+/* Style for aside element */
+aside {
+	font-style: italic;
 }
 
 /* Media query for tablet viewport target screen size with a minimum width of 660px */
@@ -111,12 +130,16 @@ nav li {
 	padding-right: 0;
 	width: 18%;
 	white-space: nowrap;
+	border-radius: 0;
+	background-color: transparent;
 }
-}
+
 /* Style specifies clear and top margin properties for main element */
 main {
 		clear: left;
-		margin-top: 4em;
+		margin-top: -0.3em;
+		border-radius: 0em;
+		overflow:auto;		
 }
 
 /* Style specifies to hide the mobile class */
@@ -140,12 +163,13 @@ main {
 .items {
 	display: block;
 	list-style-position: inside;
-	margin-bottom: 5em;
-}
+	}
 
 /* Style specifies to display tablet class */
 .tablet {
 	display: block;
+	margin-bottom: -3em;
+	margin-top: -1em;
 }
 
 /* Style specifies a font weight and top margin for description list terms */
@@ -154,7 +178,79 @@ dt {
 	margin-top: 0.7em;
 }
 
+h1 {text-align: center;
+}
 
+figure img {
+	background-color: #1D1D1C;
+	display: inline;
+	height: 8em;
+	width: 28%;
+	margin: 1%;
+	padding: 1%;
+}
+figure a {
+	background-color: transparent;
+	padding: 0;
+	text-decoration: none;
+}
+
+section {
+	padding-bottom: 3em; 
+}
+
+section h1 {
+	text-align: left;
+}
+
+section a {
+	background-color: transparent;
+	color: #1D1D1C;
+	font-weight: normal;
+	padding: 0;
+	text-decoration: underline;
+}
+
+.contact {
+	background-color: transparent;
+	color: #1D1D1C;
+	padding: 0;
+	text-decoration: underline;
+}
+
+article {
+	background-color: #C1D9CA; 
+	float: left;
+	margin: 0.5%;
+	padding: 0.5%;
+	text-align: center;
+	width: 31%;
+}
+main article img {
+	border: solid 0.1em #1D1D1C;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main article p {
+	color: #000000;
+	margin-top: 2%;
+	padding: 1%;
+	text-align: left;
+}
+
+main article ul {
+	text-align: left;
+}
+
+aside {
+	background-color: #FFFFFF;
+	border-radius: 0 5em 5em 5em;
+	box-shadow: 1em 1em 1em #4C4F4D;
+	padding: 1.5em;
+	margin: 1em;
+}
+}
 
 /* Media query for desktop viewpoer targets screens with a minimum width of 830px. */
 
@@ -162,7 +258,19 @@ dt {
 	
 /* Style specifies a width for a container */
 #container {
-	width: 80%;
+	background-color: #1D1D1C;
+}
+
+header {
+	text-align: left;
+}
+
+nav {
+	float: right;
+	margin-top: -7em;
+	margin-right: 3em;
+	margin-bottom: 0;
+	width: 65%;
 }
 
 /* Style specifies margin and padding for the unordered list within the nav */
@@ -175,8 +283,6 @@ nav ul {
 /* Style for navigation list items specifies a border-radius, border, margins, width, and padding */
 nav li {
 	border-radius: 0;
-	border-top: solid #000000;
-	border-bottom: solid #000000;
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
@@ -187,6 +293,7 @@ nav li {
 nav li a {
 	display: inline-block;
 	padding: 0.7em;
+	text-shadow: 0.2em 0.1em #3D3D35;
 }
 
 /* style rules for pseudo-classes */
@@ -195,26 +302,48 @@ nav li a:link {
 }
 
 nav li a:visited {
-	color: #FFFF99;
+	color: #CCCCFF;
 }
 
 nav li a:hover  {
-	color: #FFFF00;
+	color: #9D9D93;
 	font-style: italic;
 }
 
 /* Style specifies border, shadow, margin,  and padding for the main element */
 main {
-	border-style: none;
-	box-shadow: 0.5em 0.5em 0.5em #404040;
-	margin-bottom: 1em;
-	margin-top: 1em;
+	background-color: #1D1D1C;
 }
 
 /* Style specifies left and right padding for paragraph elements with in the main element */
 main p {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+	color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+main h2 {
+ color: #FFFFFF;
+}
+
+h1 { 
+ color: #FFFFFF;
+}
+
+figure img {
+	height: 15em;
+	opacity: 0.7;
+}
+
+figure img:hover {
+		opacity: 1;
+}
+
+footer {
+	background-color: #2A2A2A;
+	margin-top: -0.2em;
+	padding: 2em
 }
 
 /*Style specifies a bottom margin for the items class */
@@ -222,17 +351,30 @@ main p {
 	margin-bottom: 6em;
 }
 
+section {
+	color: #FFFFFF;
+	margin-left: 1em;
+	padding-bottom: 5em;
+}
+
+section a {
+	color: #FFFFFF;
+}
+
+section p {
+	margin-left: 0;
+}
+
+.contact {
+	color: #FFFFFF;
+}
+
+main article h2 {
+	color: #000000;
+}
 /* Style specifies a gradient color for the body element */
 body {
-	background: -moz-linear-gradient(#FFFFFF, #FFFF99); /* Firefox */
-	background: -o-linear-gradient(#FFFFFF, #FFFF99); /* Opera */
-	background: -webkit-linear-gradient(#FFFFFF, #FFFF99); /* Chrome, Safari */
-	background: linear-gradient(#FFFFFF, #FFFF99);
-	background-attachment: fixed;
+	background-color: #FFFFFF
 }
 
 }
-
-
-
-
