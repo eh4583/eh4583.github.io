@@ -112,9 +112,29 @@ footer a {
 
 
 /* Style for aside element */
+
+
 aside {
 	font-style: italic;
 }
+
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+label {
+	display: block;
+}
+
+form ul {
+	list-style-type: none;
+}
+.chkbx {
+	display: inline-block;
+}
+
+
 
 /* Media query for tablet viewport target screen size with a minimum width of 660px */
 
@@ -250,6 +270,41 @@ aside {
 	padding: 1.5em;
 	margin: 1em;
 }
+
+table {
+	border: 0.1em solid #000000;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+th, td {
+	border: 0.1em solid #000000;
+	padding: 1em;
+}
+
+th {
+	background-color: #1D1D1C;
+	color: #FFFFFF;
+}
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+label {
+	float: left;
+	padding-right: 0.5em;
+	text-align: right;
+	width: 10em;
+}
+
+.btn {
+	margin-left: 12em;
+}
 }
 
 /* Media query for desktop viewpoer targets screens with a minimum width of 830px. */
@@ -372,9 +427,23 @@ section p {
 main article h2 {
 	color: #000000;
 }
-/* Style specifies a gradient color for the body element */
-body {
-	background-color: #FFFFFF
+
+table {
+	background-color: #FFFFFF;
+	width: 80%;
 }
 
+caption {
+	color: #FFFFFF;
 }
+
+form {
+	background-color: #FFFFFF;
+	padding: 1em;
+}
+
+form p {
+	color: #000000;
+}
+}
+/* Style specifies a gradient color for the body element */
